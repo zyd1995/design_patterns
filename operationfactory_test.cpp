@@ -1,4 +1,4 @@
-//简单工厂模式
+////简单工厂模式
 #include<iostream>
 #include<cstdio>
 #include<string>
@@ -36,6 +36,7 @@ class operationdiv:public operation{
     }
 };
 
+//简单工厂类
 class operationfactory{
 public:
     static operation createoperate(char operate){
@@ -55,12 +56,12 @@ public:
 
 int main(){
     operation oper;
-    oper=operationfactory::createoperate('+');
+    oper=operationfactory::createoperate('+');  //通过简单工厂类构造子类对象
     double n1,n2;
     cin>>n1>>n2;
     oper.number1=n1;
     oper.number2=n2;
-    cout<<oper.getresult()<<endl;
+    cout<<oper.getresult()<<endl;   //动态绑定
     return 0;
 }
 
