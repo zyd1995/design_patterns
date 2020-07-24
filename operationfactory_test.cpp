@@ -1,4 +1,4 @@
-////简单工厂模式
+//简单工厂模式*
 #include<iostream>
 #include<cstdio>
 #include<string>
